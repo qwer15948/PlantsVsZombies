@@ -13,7 +13,11 @@ import java.awt.event.MouseListener;
 public class PlantCard extends JPanel implements MouseListener {
 
     private Image img;
+<<<<<<< HEAD:src/View/Element/PlantCard.java
     private ActionListener actionListener;
+=======
+    private ActionListener al;
+>>>>>>> master:src/PlantCard.java
 
     public PlantCard(Image img) {
         setSize(64, 90);
@@ -21,8 +25,13 @@ public class PlantCard extends JPanel implements MouseListener {
         addMouseListener(this);
     }
 
+<<<<<<< HEAD:src/View/Element/PlantCard.java
     public void setAction(ActionListener actionListener) {
         this.actionListener = actionListener;
+=======
+    public void setAction(ActionListener al) {
+        this.al = al;
+>>>>>>> master:src/PlantCard.java
     }
 
     @Override
@@ -43,8 +52,13 @@ public class PlantCard extends JPanel implements MouseListener {
 
     @Override
     public void mouseReleased(MouseEvent e) {
+<<<<<<< HEAD:src/View/Element/PlantCard.java
         if (actionListener != null) {
             actionListener.actionPerformed(new ActionEvent(this, ActionEvent.RESERVED_ID_MAX + 1, ""));
+=======
+        if (al != null) {
+            al.actionPerformed(new ActionEvent(this, ActionEvent.RESERVED_ID_MAX + 1, ""));
+>>>>>>> master:src/PlantCard.java
         }
     }
 

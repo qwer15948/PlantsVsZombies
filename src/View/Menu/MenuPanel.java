@@ -1,7 +1,10 @@
+<<<<<<< HEAD:src/View/Menu/MenuPanel.java
 package View.Menu;
 
 import View.Game.GameFrame;
 
+=======
+>>>>>>> master:src/Menu.java
 import javax.swing.*;
 import java.awt.*;
 
@@ -21,10 +24,17 @@ public class MenuPanel extends JPanel {
      */
     private Image bgImage;
 
+<<<<<<< HEAD:src/View/Menu/MenuPanel.java
     public MenuPanel() {
         initComponents();
         setSize(1012, 785);
         bgImage = new ImageIcon(this.getClass().getResource("../../images/menu.jpg")).getImage();
+=======
+    public Menu() {
+        initComponents();
+        setSize(1012, 785);
+        bgImage = new ImageIcon(this.getClass().getResource("images/menu.jpg")).getImage();
+>>>>>>> master:src/Menu.java
 
     }
 
